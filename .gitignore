@@ -1,0 +1,8 @@
+/.idea/
+/target/
+CloudBan-Bukkit/src/test/
+CloudBan-Bukkit/target/
+CloudBan-BungeeCord/src/test/
+CloudBan-BungeeCord/target/
+CloudBan-Common/src/test/
+CloudBan-Common/target/

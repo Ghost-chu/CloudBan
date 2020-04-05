@@ -1,0 +1,3 @@
+name: CloudBan BungeeCord
+version: ${project.version}
+main: com.mcsunnyside.cloudban.cloudbanbungeecord.CloudBanBungeeCord

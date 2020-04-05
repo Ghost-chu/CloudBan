@@ -1,0 +1,4 @@
+name: CloudBan Bukkit
+version: ${project.version}
+main: com.mcsunnyside.cloudban.cloudbanbukkit.CloudBanBukkit
+api-version: 1.13

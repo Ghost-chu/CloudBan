@@ -24,7 +24,7 @@ public class BanList {
         return gson.fromJson(new InputStreamReader(new FileInputStream(file), StandardCharsets.UTF_8), BanList.class);
     }
 
-    public static boolean save(@NotNull File file, @NotNull Config config) {
+    public static boolean save(@NotNull File file, @NotNull BanList config) {
         Gson gson = new GsonBuilder().disableHtmlEscaping().setPrettyPrinting().create();
         String json = gson.toJson(config);
         try {

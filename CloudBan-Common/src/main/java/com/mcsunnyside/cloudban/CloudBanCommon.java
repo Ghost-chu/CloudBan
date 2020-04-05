@@ -6,6 +6,7 @@ import org.jetbrains.annotations.NotNull;
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
+import java.util.UUID;
 
 @Data
 public class CloudBanCommon {
@@ -36,9 +37,22 @@ public class CloudBanCommon {
         BanList.save(banListFile,this.banList);
     }
 
+    /**
+     * Update local banlist caches from other servers
+     * @param banContainerList The list
+     */
     public void updateBanList(List<BanContainer> banContainerList){
         this.getBanList().setBans(banContainerList);
         BanList.save(banListFile,this.banList);
+    }
+
+    /**
+     * Gets player banned from servers. Return empty list for no bans.
+     * @param player The player uuid
+     * @return List of servers banned this plugin
+     */
+    public @NotNull List<BanContainer> getBanned(@NotNull UUID player){
+
     }
 
 }
